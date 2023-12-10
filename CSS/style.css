@@ -1,0 +1,186 @@
+:root{
+    --main-back:hsl(217, 54%, 11%);
+    --card-back:hsl(216, 50%, 16%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color:var(--main-back);
+    overflow: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+
+}
+.container{
+    width: 324px;
+    padding: 20px;
+    background-color: var(--card-back);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container .img-c{
+    position: relative;
+}
+
+.container .overlay{
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.466);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+
+}
+.container .img-c:hover .overlay {
+    opacity: 1;
+}
+.container .overlay .sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+
+.container .image .fir {
+    max-width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    object-fit: cover;
+    display: block;
+
+}
+
+
+.container .commet{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid  hsl(215, 32%, 27%);
+    padding-bottom: 10px;
+
+}
+.container .content{
+    padding-top: 15px;
+    padding-bottom: 6px;
+}
+.container .content h3{
+    color: hsla(0, 0%, 100%, 0.89);
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 4px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container .content h3:hover{
+    color: hsla(178, 100%, 50%, 0.897);
+}
+.container .content p{
+    line-height: 1.4;
+    color: hsla(215, 52%, 70%, 0.527);
+    font-size: 18px;
+    margin-top: 17px;
+    margin-bottom: 7px;
+}
+.container .commet .lef{
+    display: flex;
+    align-items: center;
+}
+.container .commet .lef h4{
+    color: hsla(178, 100%, 50%, 0.733);
+    font-size: 13px;
+}
+.container .commet .righ p{
+    font-size: 14px;
+}
+.container .commet .lef img{
+    width: 10px;
+    margin-right: 6px;
+}
+.container .commet .righ img{
+    width: 15px;
+    margin-right: 6px;
+    position: relative;
+    top: 4.3px;
+}
+.container .commet .righ{
+    display: flex;
+    align-items: center;
+}
+.container .foot{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 2.5px;
+    
+}
+.container .foot img{
+    width: 28px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+}
+.container .foot h4{
+    color: hsla(0, 0%, 100%, 0.753);
+    font-weight: normal;
+    font-size: 14px;
+}
+.container .foot h4 span.crea{
+    color: hsla(215, 52%, 70%, 0.527);
+    margin-right: 1px;
+}
+.container .foot h4 span.oth{
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.container .foot h4 span.oth:hover{
+    color: hsla(178, 100%, 50%, 0.733);
+}
+.attribution{
+    height: 4vh;
+    color: hsla(215, 52%, 70%, 0.651);
+}
