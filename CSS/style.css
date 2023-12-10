@@ -180,7 +180,7 @@ main{
 .container .foot h4 span.oth:hover{
     color: hsla(178, 100%, 50%, 0.733);
 }
-.attribution{
+footer{
     height: 4vh;
     color: hsla(215, 52%, 70%, 0.651);
 }
